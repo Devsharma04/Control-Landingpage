@@ -1,0 +1,419 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Aktiv_Grotesk_Corp;
+  src: url(./Font/Aktiv\ Grotesk/AktivGrotesk-Light.ttf);
+}
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #fcf9f1;
+  font-family: "Schibsted Grotesk", sans-serif;
+}
+
+.main {
+  max-width: 1280px;
+  height: 100%;
+  position: relative;
+  margin: auto;
+  overflow-x: hidden;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.nav_right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav_right button {
+  background-color: #212121;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  width: 150px;
+  height: 44px;
+  cursor: pointer;
+}
+/*-----------hamburger starts---------*/
+.hamburger-menu {
+  flex-direction: column;
+  cursor: pointer;
+}
+.hamburger-menu span {
+  height: 3px;
+  width: 25px;
+  background: black;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(70, 70, 70, 0.24);
+  backdrop-filter: blur(10px);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 7rem;
+  right: -100%;
+}
+.mobile-nav a:hover {
+  background-color: #fcf9f1;
+}
+.mobile-nav a {
+  padding: 1rem;
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+}
+
+.mobile-nav button {
+  border: none;
+  padding: 1rem;
+  color: white;
+  background: none;
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+}
+.mobile-nav button:hover {
+  background-color: #d1ee1e;
+}
+
+@media (max-width: 768px) {
+  .nav_right {
+    display: none;
+  }
+  .hamburger-menu {
+    display: flex;
+  }
+}
+
+/*-----------hamburger Ends---------*/
+
+.Main_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15rem;
+  flex-wrap: wrap;
+}
+
+.Heading_left h2 {
+  font-size: 45px;
+  padding: 10px;
+}
+.Heading_left p {
+  margin-top: 1rem;
+  line-height: 2rem;
+  font-family: Aktiv_Grotesk_Corp;
+  font-size: 23px;
+  padding: 10px;
+}
+.Heading_left button {
+  background-color: #212121;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  width: 150px;
+  height: 44px;
+  margin-top: 1rem;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.Heading_right img {
+  height: auto;
+  max-width: 100%;
+}
+
+.testimonials {
+  text-align: center;
+}
+.testimonials h2 {
+  font-size: 42px;
+  font-weight: 500;
+  margin-top: 11rem;
+  padding-bottom: 5rem;
+}
+.testimonials img {
+  width: 100%;
+  height: auto;
+}
+
+/* ----------------------- page 2----------------------*/
+
+.page2 h2 {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 500;
+  margin-top: 11rem;
+}
+
+.page2_sec1 {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Enables wrapping on smaller screens */
+  gap: 2rem; /* Adds spacing between items */
+}
+
+.left_sec1 {
+  flex: 1; /* Makes the section flexible */
+  min-width: 300px; /* Ensures the section doesn’t shrink too much */
+  margin: 0 1rem; /* Reduces fixed margins */
+}
+
+.right_sec1 {
+  flex: 1; /* Makes the section flexible */
+  min-width: 300px; /* Ensures the section doesn’t shrink too much */
+  margin: 0 1rem; /* Reduces fixed margins */
+  text-align: center; /* Centers the image for smaller screens */
+}
+
+.right_sec1 img {
+  max-width: 100%; /* Makes the image responsive */
+  height: auto; /* Maintains the image's aspect ratio */
+}
+
+.left_sec1 h3 {
+  font-size: 2rem; /* Relative font size for better scaling */
+  font-weight: 500;
+}
+
+.left_sec1 p {
+  font-family: Aktiv_Grotesk_Corp;
+  font-size: 1rem; /* Relative font size for better responsiveness */
+  margin: 1rem 0;
+  line-height: 1.5; /* Improves readability */
+}
+
+.left_sec1 button {
+  background-color: #212121;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem; /* Relative font size */
+  width: 150px;
+  height: 49px;
+  cursor: pointer;
+}
+.page2_sec2 {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.left_sec2 {
+  flex: 1;
+  min-width: 300px;
+  margin: 0 1rem;
+}
+
+.right_sec2 {
+  flex: 1;
+  min-width: 300px;
+  margin: 0 1rem;
+  text-align: center;
+}
+
+.right_sec2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.left_sec2 h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.left_sec2 p {
+  font-family: Aktiv_Grotesk_Corp;
+  font-size: 1rem;
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+/* --------------------------page3----------------------------- */
+.page3 h2 {
+  margin-top: 11rem;
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 5rem 3rem;
+}
+.features_name {
+  padding: 1rem;
+}
+.features_name h5 {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 1rem 0rem;
+}
+.features_name p {
+  font-size: 19px;
+  font-family: Aktiv_Grotesk_Corp;
+  color: #191919;
+}
+
+.page3_sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 5rem 1rem;
+  gap: 2rem;
+}
+
+.left_sec3 {
+  flex: 1;
+  min-width: 300px;
+}
+
+.right_sec3 {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.right_sec3 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.left_sec3 h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+.left_sec3 p {
+  font-family: Aktiv_Grotesk_Corp;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* --------------------------page4----------------------------- */
+
+.blackbox {
+  height: 325px;
+  width: 92%;
+  background-color: #212121;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.blackbox h2 {
+  padding-top: 3rem;
+  color: white;
+
+  font-size: 42px;
+  font-weight: 500;
+}
+.blackbox button {
+  margin: 3rem 0rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #d1ee1e;
+  width: 150px;
+  height: 59px;
+  font-size: 18px;
+}
+@media (max-width: 600px) {
+  .blackbox h2 {
+    font-size: 32px;
+  }
+  .blackbox button {
+    width: 120px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+.main_footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10rem 3rem;
+}
+
+.left_footer h3 {
+  font-size: 24;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+.mid_footer {
+  margin-top: 3.5rem;
+}
+.right_footer {
+  margin-top: 3.5rem;
+}
+.mid_footer p {
+  padding: 0.5rem;
+  font-size: 12.44px;
+}
+
+.right_footer p {
+  padding: 0.5rem;
+  font-size: 12.44px;
+}
+
+.last_footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 118.22px;
+  background-color: #212121;
+}
+
+.last_footer p:nth-child(1) {
+  margin-top: 2rem;
+  margin-left: 5vh;
+  color: #d1ee1e;
+}
+.last_footer p:nth-child(2) {
+  margin-top: 2rem;
+  margin-right: 5vh;
+  color: #d1ee1e;
+}
