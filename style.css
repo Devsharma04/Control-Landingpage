@@ -53,6 +53,7 @@ a {
 }
 /*-----------hamburger starts---------*/
 .hamburger-menu {
+  display: none;
   flex-direction: column;
   cursor: pointer;
 }
