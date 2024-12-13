@@ -21,6 +21,18 @@ gsap.from(".page2_sec2", {
   },
 });
 
+gsap.from(".page3_sec", {
+  x: -160,
+  opacity: 0,
+  duration: 2,
+  scrollTrigger: {
+    trigger: ".page3_sec",
+    scroller: "body",
+
+    start: "top 80%",
+  },
+});
+
 function hamburger() {
   const menu = document.querySelector(".hamburger-menu ");
   const close = document.querySelector(".mobile-nav");
